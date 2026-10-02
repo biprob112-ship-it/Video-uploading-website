@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biproxx - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-page="home">
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+  <a class="brand" href="index.html"><i class="fa-brands fa-youtube"></i><b>Biproxx</b></a>
+  <div class="search"><input id="searchInput" placeholder="Search"><button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+  <div class="top-actions">
+    <a class="icon-btn" href="upload.html" title="Create"><i class="fa-solid fa-video"></i></a>
+    <button class="icon-btn" id="themeBtn" title="Theme"><i class="fa-solid fa-moon"></i></button>
+    <a class="icon-btn" href="settings.html" title="Settings"><i class="fa-solid fa-gear"></i></a>
+    <a class="avatar" href="channel.html" id="avatar">B</a>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <a class="side active" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+  <a class="side" href="#"><i class="fa-solid fa-bolt"></i>Shorts</a>
+  <a class="side" href="subscriptions.html"><i class="fa-solid fa-tv"></i>Subscriptions</a>
+  <hr>
+  <div class="side-title">You</div>
+  <a class="side" href="channel.html"><i class="fa-solid fa-user"></i>Your channel</a>
+  <a class="side" href="history.html"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+  <a class="side" href="playlists.html"><i class="fa-solid fa-list"></i>Playlists</a>
+  <a class="side" href="liked.html"><i class="fa-solid fa-thumbs-up"></i>Liked videos</a>
+  <a class="side" href="playlists.html"><i class="fa-solid fa-clock"></i>Watch later</a>
+  <hr>
+  <div class="side-title">Explore</div>
+  <a class="side" href="#"><i class="fa-solid fa-fire"></i>Trending</a>
+  <a class="side" href="#"><i class="fa-solid fa-music"></i>Music</a>
+  <a class="side" href="#"><i class="fa-solid fa-gamepad"></i>Gaming</a>
+  <a class="side" href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+  <hr>
+  <a class="side" href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+</aside>
+
+<main class="content">
+  <div class="chips" id="chips">
+    <button class="chip active">All</button><button class="chip">Music</button><button class="chip">Gaming</button>
+    <button class="chip">Football</button><button class="chip">Coding</button><button class="chip">Technology</button>
+    <button class="chip">News</button><button class="chip">Live</button>
+  </div>
+  <section class="hero">
+    <div><span class="eyebrow">YOUR CREATOR SPACE</span><h1>Welcome to Biproxx</h1><p>Upload your own videos, build playlists and keep track of what you watch.</p><a class="primary" href="upload.html"><i class="fa-solid fa-upload"></i> Upload a video</a></div>
+    <div class="hero-icon"><i class="fa-solid fa-play"></i></div>
+  </section>
+  <div class="section-head"><h2>Home</h2><span id="videoCount"></span></div>
+  <div class="video-grid" id="videoGrid"></div>
+</main>
+<div class="toast" id="toast"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
